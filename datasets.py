@@ -25,3 +25,11 @@ data_count = count_vector.fit_transform(groups.data)
 
 
 
+## dropping stop words ##
+# stop words add noise to the BoW model 
+# stop words are common words that provide little value in helping documents differentiate themselves
+
+from sklearn.feature_extraction import stop_words
+print(stop_words.ENGLISH_STOP_WORDS)
+
+
